@@ -9,7 +9,7 @@
 
 (def ^:private welcome-msg (str "; conjure/out | Welcome to Conjure! (" meta/version ")"))
 (def ^:private max-log-buffer-length 1000)
-(defonce ^:private log-buffer-name "/tmp/conjure.cljc")
+(defonce ^:private log-buffer-name "C:\\tmp\\conjure.cljc")
 
 (do log-buffer-name)
 

@@ -38,7 +38,7 @@
                          (appenders/spit-appender {:fname (str (fs/file cwd path))}))}})
   (log/info "Logging initialised")
 
-  (log/info (str "System versions\n" (:out (shell/sh "bin/versions"))))
+  (log/info (str "System versions\n" (:out (shell/sh "cmd" "/C" "git describe --long --dirty --abbrev=10 --tags"))))
 
   (rpc/init)
   (prepl/init)

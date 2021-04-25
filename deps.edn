@@ -40,7 +40,7 @@
 
   :fast
   {:extra-paths ["classes"]
-   :jvm-opts ["-Xmx128m" "-XX:+TieredCompilation" "-XX:TieredStopAtLevel=1"]}
+   :jvm-opts ["-Xmx128m"]}
 
   :depot
   {:extra-deps {olical/depot {:mvn/version "1.8.4"}}}}}
